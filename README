@@ -1,3 +1,5 @@
 
+* Need back to "master" to integrate vendor/gridview
+* Create a new branch "dev" 
 * Using git model by creating new branch dev
 * import submodule GMGridView as gridview

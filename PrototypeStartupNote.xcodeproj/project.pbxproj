@@ -18,27 +18,46 @@
 		189C574F1531627900D5A69F /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C574E1531627900D5A69F /* ModelController.m */; };
 		189C57521531627900D5A69F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C57501531627900D5A69F /* MainStoryboard_iPhone.storyboard */; };
 		189C57551531627900D5A69F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C57531531627900D5A69F /* MainStoryboard_iPad.storyboard */; };
+		189C575C1531651200D5A69F /* README in Resources */ = {isa = PBXBuildFile; fileRef = 189C575B1531651200D5A69F /* README */; };
+		189C576B153168E600D5A69F /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 189C57691531676900D5A69F /* libGMGridView.a */; };
+		189C576E15316AAE00D5A69F /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C576D15316AAE00D5A69F /* CategoryViewController.m */; };
+		189C577015316C6F00D5A69F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189C576F15316C6F00D5A69F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189C57681531676900D5A69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189C57611531676900D5A69F /* GMGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78509312149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		189C57311531627900D5A69F /* PrototypeStartupNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeStartupNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189C57351531627900D5A69F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		189C57371531627900D5A69F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189C57391531627900D5A69F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		189C573D1531627900D5A69F /* PrototypeStartupNote-Info.plist */ = {isa = PBXFileReference; path = "PrototypeStartupNote-Info.plist"; sourceTree = "<group>"; };
+		189C573D1531627900D5A69F /* PrototypeStartupNote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrototypeStartupNote-Info.plist"; sourceTree = "<group>"; };
 		189C573F1531627900D5A69F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		189C57411531627900D5A69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		189C57431531627900D5A69F /* PrototypeStartupNote-Prefix.pch */ = {isa = PBXFileReference; path = "PrototypeStartupNote-Prefix.pch"; sourceTree = "<group>"; };
-		189C57441531627900D5A69F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		189C57431531627900D5A69F /* PrototypeStartupNote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrototypeStartupNote-Prefix.pch"; sourceTree = "<group>"; };
+		189C57441531627900D5A69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		189C57451531627900D5A69F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		189C57471531627900D5A69F /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		189C57471531627900D5A69F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		189C57481531627900D5A69F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		189C574A1531627900D5A69F /* DataViewController.h */ = {isa = PBXFileReference; path = DataViewController.h; sourceTree = "<group>"; };
+		189C574A1531627900D5A69F /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		189C574B1531627900D5A69F /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		189C574D1531627900D5A69F /* ModelController.h */ = {isa = PBXFileReference; path = ModelController.h; sourceTree = "<group>"; };
+		189C574D1531627900D5A69F /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		189C574E1531627900D5A69F /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		189C57511531627900D5A69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		189C57541531627900D5A69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		189C575B1531651200D5A69F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		189C57611531676900D5A69F /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = vendor/gridview/GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
+		189C576C15316AAE00D5A69F /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		189C576D15316AAE00D5A69F /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		189C576F15316C6F00D5A69F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189C577015316C6F00D5A69F /* QuartzCore.framework in Frameworks */,
+				189C576B153168E600D5A69F /* libGMGridView.a in Frameworks */,
 				189C57361531627900D5A69F /* UIKit.framework in Frameworks */,
 				189C57381531627900D5A69F /* Foundation.framework in Frameworks */,
 				189C573A1531627900D5A69F /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +79,7 @@
 		189C57261531627900D5A69F = {
 			isa = PBXGroup;
 			children = (
+				189C575B1531651200D5A69F /* README */,
 				189C573B1531627900D5A69F /* PrototypeStartupNote */,
 				189C57341531627900D5A69F /* Frameworks */,
 				189C57321531627900D5A69F /* Products */,
@@ -75,6 +97,8 @@
 		189C57341531627900D5A69F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189C576F15316C6F00D5A69F /* QuartzCore.framework */,
+				189C57611531676900D5A69F /* GMGridView.xcodeproj */,
 				189C57351531627900D5A69F /* UIKit.framework */,
 				189C57371531627900D5A69F /* Foundation.framework */,
 				189C57391531627900D5A69F /* CoreGraphics.framework */,
@@ -87,6 +111,8 @@
 			children = (
 				189C57441531627900D5A69F /* AppDelegate.h */,
 				189C57451531627900D5A69F /* AppDelegate.m */,
+				189C576C15316AAE00D5A69F /* CategoryViewController.h */,
+				189C576D15316AAE00D5A69F /* CategoryViewController.m */,
 				189C57471531627900D5A69F /* RootViewController.h */,
 				189C57481531627900D5A69F /* RootViewController.m */,
 				189C574A1531627900D5A69F /* DataViewController.h */,
@@ -109,6 +135,14 @@
 				189C57431531627900D5A69F /* PrototypeStartupNote-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189C57621531676900D5A69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189C57691531676900D5A69F /* libGMGridView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +183,28 @@
 			mainGroup = 189C57261531627900D5A69F;
 			productRefGroup = 189C57321531627900D5A69F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 189C57621531676900D5A69F /* Products */;
+					ProjectRef = 189C57611531676900D5A69F /* GMGridView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				189C57301531627900D5A69F /* PrototypeStartupNote */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		189C57691531676900D5A69F /* libGMGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGMGridView.a;
+			remoteRef = 189C57681531676900D5A69F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		189C572F1531627900D5A69F /* Resources */ = {
@@ -164,6 +214,7 @@
 				189C57401531627900D5A69F /* InfoPlist.strings in Resources */,
 				189C57521531627900D5A69F /* MainStoryboard_iPhone.storyboard in Resources */,
 				189C57551531627900D5A69F /* MainStoryboard_iPad.storyboard in Resources */,
+				189C575C1531651200D5A69F /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +230,7 @@
 				189C57491531627900D5A69F /* RootViewController.m in Sources */,
 				189C574C1531627900D5A69F /* DataViewController.m in Sources */,
 				189C574F1531627900D5A69F /* ModelController.m in Sources */,
+				189C576E15316AAE00D5A69F /* CategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +316,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrototypeStartupNote/PrototypeStartupNote-Prefix.pch";
+				HEADER_SEARCH_PATHS = "vendor/gridview/GMGridView/**";
 				INFOPLIST_FILE = "PrototypeStartupNote/PrototypeStartupNote-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -275,6 +328,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrototypeStartupNote/PrototypeStartupNote-Prefix.pch";
+				HEADER_SEARCH_PATHS = "vendor/gridview/GMGridView/**";
 				INFOPLIST_FILE = "PrototypeStartupNote/PrototypeStartupNote-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -300,6 +354,7 @@
 				189C575A1531627900D5A69F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
