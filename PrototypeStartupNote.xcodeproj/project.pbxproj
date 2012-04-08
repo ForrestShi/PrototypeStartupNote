@@ -32,6 +32,13 @@
 			remoteGlobalIDString = 78509312149FAC2E000787E4;
 			remoteInfo = GMGridView;
 		};
+		189C57711531797D00D5A69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189C57611531676900D5A69F /* GMGridView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78509311149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +166,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				189C57721531797D00D5A69F /* PBXTargetDependency */,
 			);
 			name = PrototypeStartupNote;
 			productName = PrototypeStartupNote;
@@ -235,6 +243,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189C57721531797D00D5A69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GMGridView;
+			targetProxy = 189C57711531797D00D5A69F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		189C573E1531627900D5A69F /* InfoPlist.strings */ = {

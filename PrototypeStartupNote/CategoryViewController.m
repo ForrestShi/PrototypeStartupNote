@@ -15,6 +15,8 @@
 @private
     GMGridView *_gridView;
 }
+- (void) computeViewFrames;
+
 @end
 
 @implementation CategoryViewController
@@ -51,22 +53,23 @@
 {
     [super viewDidLoad];
     
-    GMGridView *gmGridView2 = [[GMGridView alloc] initWithFrame:self.view.bounds];
-    gmGridView2.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    gmGridView2.style = GMGridViewStylePush;
-    gmGridView2.itemSpacing = 5;
-    gmGridView2.minEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-    gmGridView2.centerGrid = YES;
-    gmGridView2.layoutStrategy = [GMGridViewLayoutStrategyFactory strategyFromType:GMGridViewLayoutHorizontal];
-    [self.view addSubview:gmGridView2];
-    _gridView = gmGridView2;
+    GMGridView *gmGridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
+    gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    gmGridView.style = GMGridViewStylePush;
+    gmGridView.itemSpacing = 5;
+    gmGridView.minEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    gmGridView.centerGrid = YES;
+    gmGridView.layoutStrategy = [GMGridViewLayoutStrategyFactory strategyFromType:GMGridViewLayoutHorizontal];
+    [self.view addSubview:gmGridView];
+    _gridView = gmGridView;
     
     _gridView.sortingDelegate   = self;
     _gridView.transformDelegate = self;
     _gridView.dataSource = self;
     
     _gridView.mainSuperView = self.view;
-
+ 
+    [self computeViewFrames];
     
 }
 
@@ -82,6 +85,24 @@
 {
     // Return YES for supported orientations
     return YES;
+}
+
+
+//////////////////////////////////////////////////////////////
+#pragma mark Privates
+//////////////////////////////////////////////////////////////
+
+- (void)computeViewFrames
+{
+    CGSize itemSize = [self GMGridView:_gridView sizeForItemsInInterfaceOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
+    
+    CGSize minSize  = CGSizeMake(itemSize.width  + _gridView.minEdgeInsets.right + _gridView.minEdgeInsets.left, 
+                                 itemSize.height + _gridView.minEdgeInsets.top   + _gridView.minEdgeInsets.bottom);
+    
+    
+    CGRect frame = CGRectMake(30, 30 , self.view.bounds.size.width - 20 , minSize.height * 2);
+    
+    _gridView.frame = frame;
 }
 
 
@@ -102,7 +123,7 @@
     }
     else
     {
-        return CGSizeMake(230, 175);
+        return CGSizeMake(230*2, 175*2);
     }
 }
 
@@ -149,6 +170,8 @@
 
 - (void)GMGridView:(GMGridView *)gridView didStartMovingCell:(GMGridViewCell *)cell
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     [UIView animateWithDuration:0.3 
                           delay:0 
                         options:UIViewAnimationOptionAllowUserInteraction 
@@ -162,6 +185,8 @@
 
 - (void)GMGridView:(GMGridView *)gridView didEndMovingCell:(GMGridViewCell *)cell
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     [UIView animateWithDuration:0.3 
                           delay:0 
                         options:UIViewAnimationOptionAllowUserInteraction 
@@ -181,11 +206,15 @@
 - (void)GMGridView:(GMGridView *)gridView moveItemAtIndex:(NSInteger)oldIndex toIndex:(NSInteger)newIndex
 {
     // We dont care about this in this demo (see demo 1 for examples)
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
 }
 
 - (void)GMGridView:(GMGridView *)gridView exchangeItemAtIndex:(NSInteger)index1 withItemAtIndex:(NSInteger)index2
 {
     // We dont care about this in this demo (see demo 1 for examples)
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
 }
 
 
@@ -195,12 +224,16 @@
 
 - (CGSize)GMGridView:(GMGridView *)gridView sizeInFullSizeForCell:(GMGridViewCell *)cell atIndex:(NSInteger)index inInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     CGSize viewSize = self.view.bounds.size;
     return CGSizeMake(viewSize.width - 50, viewSize.height - 50);
 }
 
 - (UIView *)GMGridView:(GMGridView *)gridView fullSizeViewForCell:(GMGridViewCell *)cell atIndex:(NSInteger)index
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     UIView *fullView = [[UIView alloc] init];
     fullView.backgroundColor = [UIColor yellowColor];
     fullView.layer.masksToBounds = NO;
@@ -232,6 +265,8 @@
 
 - (void)GMGridView:(GMGridView *)gridView didStartTransformingCell:(GMGridViewCell *)cell
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     [UIView animateWithDuration:0.5 
                           delay:0 
                         options:UIViewAnimationOptionAllowUserInteraction 
@@ -244,6 +279,8 @@
 
 - (void)GMGridView:(GMGridView *)gridView didEndTransformingCell:(GMGridViewCell *)cell
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
     [UIView animateWithDuration:0.5 
                           delay:0 
                         options:UIViewAnimationOptionAllowUserInteraction 
@@ -256,7 +293,7 @@
 
 - (void)GMGridView:(GMGridView *)gridView didEnterFullSizeForCell:(GMGridViewCell *)cell
 {
-    
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 }
 
 @end
